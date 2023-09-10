@@ -1,0 +1,71 @@
+/* Navbar */
+.navbar {
+    background-color: #333;
+}
+
+/* Mobile Menu Button */
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/* Page Heading */
+h1 {
+    margin-top: 100px; /* Adjust as needed */
+}
+
+/* Content Section */
+.content-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+.content-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    min-height: 1000px; /* Adjust as needed */
+}
+.row{
+}
+.row .col-xs-12 ul{
+    display: flex;
+    gap:8px;
+    height: 250px;
+    list-style: none;
+    margin-left:-150px;
+}
+.row .col-xs-12 ul li{
+    width:40%;
+    border:2px solid black;
+}
+@media (max-width: 767px) {
+    /* Add tablet-specific styles here */
+    .row .col-xs-12 ul{
+        display: inline;
+        margin-left:-25px;
+        width: 100%;
+    }
+    .row .col-xs-12 ul li{
+        width: 50%;
+    }
+    .menu-item {
+        width:50%;
+        font-size: 18px;
+    }
+}
+
+/* Media Query for Mobile (Bootstrap xs) */
+@media (max-width: 479px) {
+    /* Add mobile-specific styles here */
+    .row .col-xs-12 ul{
+        display:block;
+        margin-left:-25px;
+        width: 100%;
+    }
+    .row .col-xs-12 ul li{
+        width: 100%;
+    }
+    .menu-item {
+        width: 100%;
+        /* Example mobile-specific styles */
+        font-size: 16px;
+    }
+}
